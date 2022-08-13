@@ -165,12 +165,13 @@ function esPrimo(numero) {
   if (numero < 2) return false;
   if (numero === 2) return true;
   for(var i = 2; i < numero; i++){
-      if (numero % 1 === 0){
+      if (numero % i === 0){
         return false;
       }
   }
   return true;
 }
+
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.

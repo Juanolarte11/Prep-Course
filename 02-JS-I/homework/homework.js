@@ -30,7 +30,6 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  var str
   return str;
 }
 
@@ -117,7 +116,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0) {
+  if (num % 2 === 0) {
     return true;
   } else
     return false;
@@ -127,7 +126,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 1) {
+  if (num % 2 === 1) {
     return true;
   } else
     return false;
@@ -153,8 +152,7 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var e = exponent;
-  var cuadrada = Math.pow(num,e);
+  var cuadrada = Math.pow(num,exponent);
   return cuadrada;
 }
 
@@ -175,7 +173,6 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  var a = 0;
   var b = Math.random();
   return b;
 }
